@@ -1,0 +1,29 @@
+{
+    "name": "blockchainrndhub/bitcoin-bundle",
+    "description": "Generates documentation for your REST API from annotations",
+    "keywords": ["bitcoin", "blockchain"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Blockchainrndhub",
+            "homepage": "https://blockchainrndhub.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/framework-bundle": "~2.3|~3.0",
+        "symfony/console": "~2.3|~3.0"
+    },
+    "require-dev": {
+        "symfony/validator": "~2.3|~3.0",
+        "symfony/yaml": "~2.3|~3.0",
+        "doctrine/orm": "~2.3",
+        "doctrine/doctrine-bundle": "~1.5",
+        "symfony/phpunit-bridge": "~2.7|~3.0"
+    },
+    "autoload": {
+        "psr-0": { "Blockchainrndhub\\BitcoinBundle": "" }
+    },
+    "target-dir": "Blockchainrndhub/BitcoinBundle"
+}
