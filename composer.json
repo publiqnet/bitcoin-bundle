@@ -1,6 +1,6 @@
 {
     "name": "blockchainrndhub/bitcoin-bundle",
-    "description": "Generates documentation for your REST API from annotations",
+    "description": "Bitcoin blockchain explorer",
     "keywords": ["bitcoin", "blockchain"],
     "type": "symfony-bundle",
     "license": "MIT",
