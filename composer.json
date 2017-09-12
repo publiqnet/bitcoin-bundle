@@ -1,29 +1,23 @@
 {
-    "name": "blockchainrndhub/bitcoin-bundle",
-    "description": "Bitcoin blockchain explorer",
-    "keywords": ["bitcoin", "blockchain"],
-    "type": "symfony-bundle",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Blockchainrndhub",
-            "homepage": "https://blockchainrndhub.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4",
-        "symfony/framework-bundle": "~2.3|~3.0",
-        "symfony/console": "~2.3|~3.0"
-    },
-    "require-dev": {
-        "symfony/validator": "~2.3|~3.0",
-        "symfony/yaml": "~2.3|~3.0",
-        "doctrine/orm": "~2.3",
-        "doctrine/doctrine-bundle": "~1.5",
-        "symfony/phpunit-bridge": "~2.7|~3.0"
-    },
-    "autoload": {
-        "psr-0": { "Blockchainrndhub\\BitcoinBundle": "" }
-    },
-    "target-dir": "Blockchainrndhub/BitcoinBundle"
+  "name" : "blockchainrndhub/bitcoin-bundle",
+  "description" : "Bitcoin bundle provide us to use bitcoin services.",
+  "type" : "symfony-bundle",
+  "license":      "MIT",
+  "authors" : [{
+    "name": "Blockchain R&D Hub",
+    "email": "info@blockchainrndhub.com"
+  }],
+  "keywords" : [
+    "blockchainrndhub","bitcoin","bundle"
+  ],
+  "require": {
+    "php": "^7.0",
+    "blockchain/blockchain": "^1.4"
+  },
+  "minimum-stability": "dev",
+  "autoload" : {
+    "psr-4" : {
+      "Blockchainrndhub\\BitcoinBundle\\" : ""
+    }
+  }
 }

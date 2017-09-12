@@ -1,0 +1,4 @@
+services:
+    bitcoin_etherscan:
+        class: EtherScan\Resources\ApiConnector
+        arguments: ['%bitcoin_api_key%']
