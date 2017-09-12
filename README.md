@@ -6,7 +6,7 @@ Instalation
 
 Install via composer
 ```shell
-composer require blockchainrndhub/ethereum-bundle
+composer require blockchainrndhub/bitcoin-bundle
 ```
 Enable the bundle in your kernel
 -----------
@@ -14,7 +14,7 @@ Enable the bundle in your kernel
 # app/AppKernel.php
 $bundles = [
     //...
-    new Blockchainrndhub\EthereumBundle\BlockchainrndhubEthereumBundle(),
+    new Blockchainrndhub\BitcoinBundle\BlockchainrndhubBitcoinBundle(),
     //...
 ];
 ```
@@ -23,8 +23,8 @@ Add config
 ```yaml
 # app/config/config.yml
   
-    blockchainrndhub_ethereum:
-        etherscan_api_key: '%etherscan_api_key%'
+    blockchainrndhub_bitcoin:
+        bitcoin_api_key: '%bitcoin_api_key%'
 ```
 
 
@@ -34,7 +34,7 @@ Add parameters
 # app/config/parameters.yml
   
     parameters:
-        etherscan_api_key: YOUR_API_KEY
+        bitcoin_api_key: YOUR_API_KEY
 ```
 
 
@@ -42,7 +42,7 @@ Usage
 -----------
 ```yaml
 
-  $etherscan = $this->container->get('ethereum_etherscan');
+  $bitcoinscan = $this->container->get('bitcoin_scan');
 
     
 ```
